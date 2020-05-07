@@ -1,6 +1,12 @@
-<h2>Show Quote</h2>
-<p><%= link_to("<<< Back to all quotes", quotes_path)  %></p>
-<div>
-  <p><%= @quote.body %></p>
-  <p><%= @quote.author %></p>
+<div class="container">
+  <h2>Show Quote</h2>
+   <div class="bk-btn">
+    <button type="button" class="btn btn-secondary"><%= link_to("< Back to all quotes", quotes_path)  %></button>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <p class="card-title"> <%= @quote.body %></p>
+      <p class="card-text"> <%= @quote.author %></p>
+    </div>
+  </div>
 </div>
