@@ -12,6 +12,7 @@
  *
  */
 @import "bootstrap";
+@import "landing";
 
 body {
     margin: 0px;
@@ -21,6 +22,7 @@ body {
 h2 {
     text-align: center;
 }
+
 
 // index page
 .card {
@@ -56,4 +58,11 @@ textarea {
     a {
         color: white;
     }
+}
+
+
+//user-sign in form
+
+.new_user {
+    text-align: center;
 }

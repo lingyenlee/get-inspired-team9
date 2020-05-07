@@ -1,24 +1,16 @@
-# README
+## The App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The App is a Quote API where the user can add a quote to the database with an author and an optional image of the one who quoted it
 
-Things you may want to cover:
+## How to run it locally
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Install ruby 2.7.1 <br>
+Install Ruby on Rails <br>
+CD into the folder you want to save the code and type "git clone https://github.com/lingyenlee/get-inspired-team9"<br>
+CD into get-inspired-team9<br>
+bundle install<br>
+rails s<br>
+Open your browser and go to the url bar and type "local host 3000"
+![Landing Page and Listing Page(-)
+![See Quote and new/edit Quote](-)
+Homepage
