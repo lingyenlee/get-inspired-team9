@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# User.create!(
-#     :email => 'john@gmail.com', 
-#     :password => 'topsecret', 
-#     :password_confirmation => 'topsecret'
-# )
-# puts "User created."
+User.create!(
+    :email => 'john@gmail.com', 
+    :password => 'topsecret', 
+    :password_confirmation => 'topsecret'
+)
+puts "User created."
 
 
 for i in 1..5
