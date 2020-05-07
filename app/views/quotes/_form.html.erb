@@ -1,0 +1,25 @@
+<% if @quote.errors.any? %>
+  <ul>
+    <% @quote.errors.full_messages.each do |error| %>
+      <li> <%= error %></li>
+    <% end %>
+  </ul>
+<%end%>
+<%= form_with model: @quote, local: true do |f| %>
+  <div class="form-group">
+    <%= f.label "Quote"%>
+    <%= f.text_area :body %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Who quote it?"%>
+    <%= f.text_field :author %>
+  </div>
+  <div class="form-group">
+    <%= f.label "Image (Optional)" %>
+    <%= f.file_field :picture, accept:
+  'image/png,image/gif,image/jpeg,image/jpg' %>
+  </div>
+  <div>
+    <%= f.submit%>
+  </div>
+<% end %>
