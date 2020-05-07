@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
-
+    
     before_action :authenticate_user!
     before_action :set_quote, only: [:show, :edit, :update, :destroy ]
 
@@ -21,7 +21,7 @@ class QuotesController < ApplicationController
 
         respond_to do |format|
             if @quote.save
-              format.html { redirect_to @quote, notice: 'Toy was successfully created.' }
+              format.html { redirect_to @quote, notice: 'Quote was successfully created.' }
               format.json { render :show, status: :created, location: @quote }
             else
               format.html { render :new }
@@ -62,7 +62,7 @@ class QuotesController < ApplicationController
         if @quote 
             @quote.destroy
             respond_to do |format|
-                format.html { redirect_to quotes_path, notice: 'Quote was successfully destroyed.' }
+                format.html { redirect_to quotes_path, notice: 'Quote was successfully deleted.' }
                 format.json { head :no_content }
             end
         end

@@ -12,7 +12,7 @@
  *
  */
 @import "bootstrap";
-@import "landing";
+@import "devise";
 
 body {
     margin: 0px;
@@ -23,8 +23,21 @@ h2 {
     text-align: center;
 }
 
-
 // index page
+
+.container a {
+    text-align: center;
+}
+
+.notice {
+    text-align: center;
+}
+
+
+.login {
+    text-align: center;
+}
+
 .card {
     margin: 1rem;
 }
@@ -58,11 +71,4 @@ textarea {
     a {
         color: white;
     }
-}
-
-
-//user-sign in form
-
-.new_user {
-    text-align: center;
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>Get Inspired</title>
+  </head>
+  <body>
+    <div class="container-home">
+      <div class="welcome-text">
+        <h1>Get Inspired</h1>
+        <h2> Welcome to the Team 9 Quote Generator </h2>
+        <h4>Created by Ling, Martin & Matt</h4>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>
