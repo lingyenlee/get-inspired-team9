@@ -68,3 +68,5 @@ gem "faker", "~> 2.11"
 gem 'bootstrap', '~> 4.4.1'
 
 gem 'jquery-rails'
+
+gem "rest-client", "~> 2.1"

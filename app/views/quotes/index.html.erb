@@ -3,6 +3,7 @@
   <div class="btn-index">
     <button type="button" class="btn btn-primary"><%= link_to("Create new quote", new_quote_path) %></button>
     <button type="button" class="btn btn-info"><%= link_to("Donate") %></button>
+    <button type="button" class="btn btn-info"><%= link_to("Generate Quote", generate_new_quote_path) %></button>
   </div>
   <% @quotes.each do |quote| %>
     <div class="card">

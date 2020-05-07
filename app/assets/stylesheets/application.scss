@@ -24,17 +24,15 @@ h2 {
 }
 
 // index page
+.container {
+    position: relative;
+}
 
 .container a {
     text-align: center;
 }
 
 .notice {
-    text-align: center;
-}
-
-
-.login {
     text-align: center;
 }
 
@@ -71,4 +69,38 @@ textarea {
     a {
         color: white;
     }
+}
+
+
+.qod {
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    background-image: url(image-path("qod.jpg"));
+    background-size: cover;
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+
+    .card {
+        width: 20rem;
+        height: 15rem;
+        margin: 10rem 5rem;
+        background: none;
+        border: none;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card-subtitle {
+        font-style: italic;
+        text-align: right;
+        margin-top: 1rem;
+    }
+
 }

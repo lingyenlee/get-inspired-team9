@@ -1,0 +1,14 @@
+<div class="bk-btn">
+  <button type="button" class="btn btn-secondary"><%= link_to("< Back to all quotes", quotes_path)  %></button>
+</div>
+<div class="qod">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Quote of the day</h5>
+      <p class="card-text"> <%= @qod["text"]  %></p>
+      <p class="card-subtitle">From <%= @qod["author"] %></p>
+    </div>
+  </div>
+  <%# <%= @qod["text"] %>
+  <%# <%= @qod["author"] %>
+</div>
