@@ -1,12 +1,12 @@
-
-<head>
-<title><%= @title %></title>
-</head>
-
-
-<h2> Welcome to the Team 9 quote generator </h2>
-
-
-<h4>Created by Ling, Martin & Matt</h4>
-
-
+<%# <head> %>
+<%# <title><%= @title %>
+<%# </head> %>
+<div class="container-home">
+  <% if user_signed_in? %>
+    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "Login/Signup", new_user_session_path %>
+  <%end%>
+  <h2> Welcome to the Team 9 quote generator </h2>
+  <h4>Created by Ling, Martin & Matt</h4>
+</div>
