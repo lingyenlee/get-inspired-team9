@@ -1,0 +1,12 @@
+<h2>All quotes</h2>
+<div>
+  <button><%= link_to("Add new", new_quote_path) %></button>
+</div>
+<div>
+  <% @quotes.each do |q| %>
+    <p><%= q.body%> -- <%= q.author%></p>
+    <button>  <%= link_to('Show', quote_path(q)) %> </button>
+    <button>  <%= link_to('Edit', edit_quote_path(q)) %> </button>
+    <button>  <%= link_to('Delete', delete_quote_path(q)) %> </button>
+  <% end %>
+</div>

@@ -1,0 +1,14 @@
+<h2>Add new quote</h2>
+<%= form_with model: @quote, local: true do |f| %>
+  <div>
+    <%= f.label "Quote"%>
+    <%= f.text_area :body %>
+  </div>
+  <div>
+    <%= f.label "Author"%>
+    <%= f.text_field :author %>
+  </div>
+  <div>
+    <%= f.submit%>
+  </div>
+<% end %>
