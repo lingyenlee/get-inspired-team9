@@ -1,0 +1,7 @@
+<div class="container">
+  <h2>New quote</h2>
+  <div class="bk-btn">
+    <button type="button" class="btn btn-secondary"><%= link_to("< Back to all quotes", quotes_path)  %></button>
+  </div>
+  <%= render "form", quote: @quote %>
+</div>
