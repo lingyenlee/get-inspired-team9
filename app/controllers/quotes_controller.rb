@@ -69,16 +69,16 @@ class QuotesController < ApplicationController
         end
     end
 
-    def generate
-        all_quotes = getData
-        @qod = all_quotes.sample
-        puts @qod
-        # puts "generate"
-        #  url = "https://quotes.rest/qod?language=en"
-        # response = RestClient.get(url)
-        # @qod = JSON.parse(response.body)
-        # puts @qod
-    end
+    # def generate
+    #     all_quotes = getData
+    #     @qod = all_quotes.sample
+    #     puts @qod
+    #     # puts "generate"
+    #     #  url = "https://quotes.rest/qod?language=en"
+    #     # response = RestClient.get(url)
+    #     # @qod = JSON.parse(response.body)
+    #     # puts @qod
+    # end
 
     private
 
@@ -90,9 +90,9 @@ class QuotesController < ApplicationController
             params.require(:quote).permit(:body, :author, :picture)
         end
 
-        def getData
-          response = ::RestClient::Request.execute(method: :get, url: "https://type.fit/api/quotes", headers: {"content_type" => "application/json"})
-          JSON.parse(response.body)
-        end
+        # def getData
+        #   response = ::RestClient::Request.execute(method: :get, url: "https://type.fit/api/quotes", headers: {"content_type" => "application/json"})
+        #   JSON.parse(response.body)
+        # end
         
 end
